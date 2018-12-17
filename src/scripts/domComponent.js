@@ -1,4 +1,6 @@
 import contactForm from "./contactForm"
+import contactList from "./contactList"
+import contact from "./contact"
 
 const domComponent = {
   createDomElement({ elementType, content = null, cssClass = "", attributes = {} }) {

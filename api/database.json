@@ -11,6 +11,30 @@
       "phone": "(345)-745-0976",
       "address": "12 Old Hick S. Nashville, TN",
       "id": 2
+    },
+    {
+      "name": "Hernando Rodriguez",
+      "phone": "(432)-321-7564",
+      "address": "Elison Ave, Las Vegas, OH",
+      "id": 3
+    },
+    {
+      "name": "Jill Conner",
+      "phone": "(658)-948-8574",
+      "address": "34 Spring Rd Markville, NY",
+      "id": 4
+    },
+    {
+      "name": "Gloria Estefan",
+      "phone": "(312)-345-0965",
+      "address": "TrumpTower,  Moscow",
+      "id": 5
+    },
+    {
+      "name": "James Sagat",
+      "phone": "(321)345-9802",
+      "address": "LaneWood Dr, Los Angeles, CA",
+      "id": 6
     }
   ]
 }

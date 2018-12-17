@@ -1,4 +1,4 @@
-// component that, when filled out and a submit button is pressed, adds a new contact to storage. It should import the ContactCollection component.
+// COMPLETED component that, when filled out and a submit button is pressed, adds a new contact to storage. It should import the ContactCollection component.
 import contactCollection from "./contactCollection"
 import domComponent from "./domComponent";
 const contactForm = {
@@ -6,7 +6,7 @@ const contactForm = {
     const foundationalContainer = document.querySelector(".output");
     const contactCategories = ["name", "phone-number", "address"]
     foundationalContainer.appendChild(domComponent.createDomElement({
-      elementType: "div",
+      elementType: "form",
       attributes: {
         id: "form-container",
         class: "form"
@@ -43,9 +43,6 @@ const contactForm = {
     };
     // console.log(newContact);
     contactCollection.saveNewContact(newContact);
-    contactName.value = "";
-    contactPhone.value = "";
-    contactAddress.value = "";
   }
 };
 
