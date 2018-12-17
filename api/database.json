@@ -23,6 +23,12 @@
       "phone": "(234)-847-9825",
       "address": "879 Bellsbury Rd Lameness, AR",
       "id": 8
+    },
+    {
+      "name": "Lauren Riggs",
+      "phone": "(765)-321-7635",
+      "address": "South Hampto Blvd, Rockville, CO",
+      "id": 9
     }
   ]
 }

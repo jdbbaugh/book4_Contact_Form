@@ -18,6 +18,15 @@ const domComponent = {
     if (elementType === "button" && content === "Delete Contact") {
       element.addEventListener("click", contactList.deleteContactButton);
     }
+
+    if (elementType === "button" && content === "Show All Contacts") {
+      element.addEventListener("click", contactList.showContactsButton);
+    }
+    
+    if (elementType === "button" && content === "Collapse Contact List") {
+      element.addEventListener("click", contactList.collapseContactsButton)
+    }
+
     return element;
   },
     
