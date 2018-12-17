@@ -17,6 +17,18 @@ const contactCollection = {
           body: JSON.stringify(contact), // body data type must match "Content-Type" header
       })
       .then(response => response.json()); // parses response to JSON
+  },
+  deleteContact (contactToDelete) {
+    fetch(`http://localhost:8088/contacts/${contactToDelete}`, {
+  method: "DELETE",
+  headers: {"Content-Type": "application/json"},
+  body: JSON.stringify({id: contactToDelete})
+})
+.then(res => res.text())
+.then(res => alert(`you deleted ${contactToDelete}`))
+let contactToRemove = document.querySelector(`.contact-${contactToDelete}`)
+contactToRemove.parentNode.removeChild(contactToRemove);
+
   }
 }
 

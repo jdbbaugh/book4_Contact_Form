@@ -28,13 +28,17 @@ const contactList = {
       allContacts.forEach(people => {
         let contactHTML = contact.contactBuilder(people);
         contactsFragment.appendChild(contactHTML);
-        console.log(contactHTML);
+        // console.log(contactHTML);
         const appendToDom = document.querySelector(".contact-container");
         appendToDom.appendChild(contactHTML);
+        // console.log(people.id)
       })
     });
+  },
+  deleteContactButton () {
+    // console.log(event.target.className);
+    contactCollection.deleteContact(event.target.className)
   }
-
 
 }
 
