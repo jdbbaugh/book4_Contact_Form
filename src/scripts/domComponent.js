@@ -14,6 +14,10 @@ const domComponent = {
     for (let key in attributes) {
       element.setAttribute(key, attributes[key]);
     }
+    
+    if (elementType === "button" && content === "Delete Contact") {
+      element.addEventListener("click", contactList.deleteContactButton);
+    }
     return element;
   },
     
